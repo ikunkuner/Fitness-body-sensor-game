@@ -8,7 +8,7 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 
 # 读取图片
-image_path = "1.jpg"  # 替换为你的图片路径
+image_path = "../images/1.jpg"  # 替换为你的图片路径
 image = cv2.imread(image_path)
 
 # 创建 Pose 实例
@@ -36,7 +36,7 @@ with mp_pose.Pose(
         )
 
         # 保存或显示结果
-        cv2.imwrite('output_pose.jpg', annotated_image)
+        cv2.imwrite('../output_pose.jpg', annotated_image)
         print("姿态检测完成，结果已保存为 output_pose.jpg")
 
         # 打印关键点信息
